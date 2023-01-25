@@ -25,9 +25,22 @@ const save_search = async(userSearch) => {
 let search = [];
 const searchForm = document.getElementById('search-form');
 const searchText = document.getElementById('search-text');
+const searchQuery = document.getElementById('search-query');
+
+searchText.addEventListener('click', () => {
+  searchQuery.innerHTML = '';
+  document.getElementById('notification').innerHTML = '';
+});
+
 searchText.addEventListener('keyup', () => {
   const input = searchText.value;
   search.push(input);
+
+  if(searchText.value.length > 0){
+    searchQuery.innerHTML = ''.concat('Search Query: ', input);
+  } else {
+    searchQuery.innerHTML = '';
+  }
 });
 
 searchForm.addEventListener('submit', (e) => {

@@ -10,6 +10,13 @@
   </head>
 
   <body>
+    <% if user_signed_in? %>
+      <div>
+        <div>Welcome <%= current_user.name %></div>
+        <%= button_to "Sign out", destroy_user_session_path, method: :delete, data: { turbo: false }, class:"btn btn-danger" %>
+      </div>
+    <% end %>
+
     <div>
       <p><%= notice %></p>
       <p><%= alert %></p>

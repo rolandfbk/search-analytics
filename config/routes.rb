@@ -4,5 +4,10 @@ Rails.application.routes.draw do
 
   root to: 'analytics#new'
 
-  resources :analytics, only: [:index, :show, :new, :create, :destroy]
+  resources :analytics, only: [:index, :show, :new, :create, :destroy] do
+    collection do
+      get 'user_search'
+    end
+  end
+
 end
