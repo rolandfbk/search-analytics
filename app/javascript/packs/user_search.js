@@ -35,7 +35,15 @@ searchForm.addEventListener('submit', (e) => {
   const userSearch = search.slice(-1)[0];
   const saveSearch = save_search(userSearch.trim());
   saveSearch.then((data) => {
-    console.log(data);
+    // console.log(data);
+    if(data.answer){
+      searchForm.reset();
+      document.getElementById('notification').innerHTML = "Your search was successfully saved.";
+      document.getElementById('notification').style.color = "green";
+    } else {
+      document.getElementById('notification').innerHTML = "There was an error saving your search.";
+      document.getElementById('notification').style.color = "red";
+    }
   });
 
   

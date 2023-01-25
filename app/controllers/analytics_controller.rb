@@ -12,16 +12,19 @@ class AnalyticsController < ApplicationController
   def new; end
 
   def create
-    @test = params[:usersearch]
+    @search_text = params[:usersearch]
     # @test = "Test"
-    render json: { test: @test }
+    # render json: { test: @test }
 
-    # @analytics = Analytics.new(analytics_params)
-    # if @analytics.save
-    #   redirect_to analytics_path(@analytics)
-    # else
-    #   render :new
-    # end
+    @analytics = current_user.analytics.new(search: @search_text)
+
+    if @analytics.save
+      # redirect_to root_path, notice: 'Your search was successfully saved.'
+      render json: { answer: true }
+    else
+      # render :new, notice: 'There was an error saving your search.'
+      render json: { answer: false }
+    end
   end
 
   def destroy
