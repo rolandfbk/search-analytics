@@ -22,6 +22,10 @@ To get a local copy up and running follow these simple example steps.
 
 NB: Only the admin user can view the alanytics page.
 
+## Live Demo
+
+[Live Demo Link](https://search-analytics-helpjuice.herokuapp.com/)
+
 ## Authors
 
 👤 **Roland**
