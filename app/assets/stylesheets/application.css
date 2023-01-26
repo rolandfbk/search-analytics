@@ -118,6 +118,18 @@ nav {
   background-color: #fff;
 }
 
+.btn_submit_width {
+  width: 100%;
+}
+
+.input_text_width {
+  width: 95%;
+}
+
+.btn_submit_margin_top {
+  margin-top: 15px;
+}
+
 #name {
   height: 30px;
   width: 300px;
@@ -142,4 +154,28 @@ td {
 
 tr:hover {
   background-color: #f5f5f5;
+}
+
+.login-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* width: 100%; */
+}
+
+.post_form_element {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+.input_from {
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
