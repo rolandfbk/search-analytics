@@ -75,11 +75,11 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: search_analytics_production
-  username: search_analytics
-  password: <%= ENV['SEARCH_ANALYTICS_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+#
+# production:
+#   <<: *default
+#   database: search_analytics_production
+#   username: search_analytics
+#   password: <%= ENV['SEARCH_ANALYTICS_DATABASE_PASSWORD'] %>
