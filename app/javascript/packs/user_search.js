@@ -1,5 +1,5 @@
 const save_search = async(userSearch) => {
-  const url = 'http://localhost:3000/analytics';
+  const url = 'https://search-analytics-helpjuice.herokuapp.com/analytics';
 
   const myHeaders = new Headers();
   myHeaders.append('Content-Type', 'application/json');

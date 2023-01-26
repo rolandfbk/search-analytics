@@ -1,5 +1,5 @@
 const user_analytics = async(user_id) => {
-  const url = 'http://localhost:3000/analytics/user_search?user_id='.concat(user_id);
+  const url = 'https://search-analytics-helpjuice.herokuapp.com/analytics/user_search?user_id='.concat(user_id);
 
   const request = new Request(url);
 
