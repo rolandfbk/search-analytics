@@ -1,12 +1,13 @@
-<h1>Analytics index</h1>
-
-<%= form_with url: user_search_analytics_path, id: 'user-form' do |f| %> 
-  <%= f.select :name, User.all.map { |u| [u.name, u.id] }, :include_blank => "Please select user" %>
-<% end %>
-
-<%= link_to "Clear", analytics_path, id: 'clearBtn' %>
-
 <h3>Trending searches</h3>
+
+<div class="user-selection">
+  <%= form_with url: user_search_analytics_path, id: 'user-form' do |f| %> 
+    <%= f.select :name, User.all.map { |u| [u.name, u.id] }, :include_blank => "Please select user", class: 'select-text' %>
+  <% end %>
+
+  <%= link_to "Clear", analytics_path, id: 'clearBtn', class:"btn_clear btn_hover" %>
+</div>
+
 <div id="analytics">
   <table>
     <% @analytics.each do |search, count| %>

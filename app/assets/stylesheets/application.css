@@ -13,3 +13,133 @@
  *= require_tree .
  *= require_self
  */
+
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.list {
+  width: 50%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.title {
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+}
+
+#search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+#search-text {
+  height: 30px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.btn_submit_from {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: #4285f4;
+  color: #fff;
+  padding: 5px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  border: 1px solid #4285f4;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.btn_signout_from {
+  width: 100%;
+  border: none;
+  cursor: pointer;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  border: 1px solid #1a2236;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.btn_clear {
+  border: none;
+  cursor: pointer;
+  background-color: #dc143c;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  border: 1px solid #dc143c;
+  padding-left: 5px;
+  padding-right: 5px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-delay: 0.2s;
+}
+
+.btn_hover:hover {
+  border: 1px solid #1a2236;
+  color: #1a2236;
+  background-color: #fff;
+}
+
+#name {
+  height: 30px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.user-selection {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin: 20px 0;
+}
+
+td {
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+tr:hover {
+  background-color: #f5f5f5;
+}

@@ -1,14 +1,10 @@
-<h1>Helpjuice Search Analytics</h1>
-<p>
-  Welcome to the search analytics app. This app will help you find out what your users are searching for on your Helpjuice knowledge base.
-</p>
 <% if current_user.admin? %>
     <%= link_to "View Analytics", analytics_path %>
 <% end %>
 <br><br>
 <%= form_with model: Analytic.new, id: 'search-form' do |f| %>
   <%= f.text_field :search, id: 'search-text' %>
-  <%= f.submit "Search" %>
+  <%= f.submit "Search", class:"btn_submit_from btn_hover" %>
 <% end %>
 
 <h3 id="notification"></h3>
