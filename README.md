@@ -16,6 +16,10 @@ To get a local copy up and running follow these simple example steps.
   - run `rails db:migrate`
   - run `rails db:seed`
 
+- Admin user credentials:
+  - email: roland@gmail.com
+  - password: password
+
 ## Authors
 
 👤 **Roland**
