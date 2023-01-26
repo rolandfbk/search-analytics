@@ -20,6 +20,8 @@ To get a local copy up and running follow these simple example steps.
   - email: roland@gmail.com
   - password: password
 
+NB: Only the admin user can view the alanytics page.
+
 ## Authors
 
 👤 **Roland**
