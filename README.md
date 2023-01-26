@@ -1,24 +1,39 @@
-# README
+# Search Analytics
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Search Analytics is an app that will help you find out what your users are searching for the most in the system.
 
-Things you may want to cover:
+## Getting Started
+To get a local copy up and running follow these simple example steps.
 
-* Ruby version
+- Get the directory that you want to clone the repository.
+- Open the command prompt in this directory.
+- Run `git clone https://github.com/rolandfbk/search-analytics.git`.
+- Go to the repository folder in your command prompt `cd search-analytics`.
 
-* System dependencies
+- Follow these steps to run the app:
+  - run `bundle install`, then run `rails s`
+  - run `rails db:create`
+  - run `rails db:migrate`
+  - run `rails db:seed`
 
-* Configuration
+## Authors
 
-* Database creation
+👤 **Roland**
 
-* Database initialization
+- GitHub: [@rolandfbk](https://github.com/rolandfbk)
+- Twitter: [@rolandfbk](https://twitter.com/rolandfbk)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/roland-ossisa-yuma)
 
-* How to run the test suite
+## 🤝 Contributing
 
-* Services (job queues, cache servers, search engines, etc.)
+Contributions, issues, and feature requests are welcome!
 
-* Deployment instructions
+Feel free to check the [issues page](../../issues/).
 
-* ...
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- I thank Helpjouce for this wonderful job opportunity
