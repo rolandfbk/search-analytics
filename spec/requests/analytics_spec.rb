@@ -4,7 +4,7 @@ RSpec.describe 'Analytics', type: :request do
   before :each do
     @user = User.create(name: 'Grabrielle', email: 'gabrielle@test.com', password: '123456789', role: 'admin')
     @analytic = @user.analytics.create(search: 'How is Emil Hajric doing?')
-    
+
     post user_session_path, params: { user: { email: @user.email, password: @user.password } }
   end
 

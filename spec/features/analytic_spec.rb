@@ -28,13 +28,13 @@ RSpec.describe 'Analytic page test', type: :feature do
     it "Should navigate to recipe food's new page" do
       visit root_path
       click_link 'View Analytics'
-      expect(current_path).to eq("/analytics")
+      expect(current_path).to eq('/analytics')
     end
   end
 
   describe 'index page' do
     before :each do
-      @user = User.create(name: 'Grabrielle', email: 'gabrielle@test.com', password: '123456789' , role: 'admin')
+      @user = User.create(name: 'Grabrielle', email: 'gabrielle@test.com', password: '123456789', role: 'admin')
       @analytic = @user.analytics.create(search: 'How is Emil Hajric doing?')
 
       visit new_user_session_path
@@ -44,13 +44,13 @@ RSpec.describe 'Analytic page test', type: :feature do
     end
 
     it 'check analytics#index path' do
-      visit "/analytics"
-      expect(current_path).to eq("/analytics")
+      visit '/analytics'
+      expect(current_path).to eq('/analytics')
       expect(page).to have_text('Trending searches')
     end
 
     it 'Should display "How is Emil Hajric doing?"' do
-      visit "/analytics"
+      visit '/analytics'
       expect(page).to have_content('How is Emil Hajric doing?')
     end
   end
