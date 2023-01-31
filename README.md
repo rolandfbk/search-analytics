@@ -46,4 +46,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- I thank Helpjouce for this wonderful job opportunity
+- I thank Helpjouce for this wonderful opportunity
